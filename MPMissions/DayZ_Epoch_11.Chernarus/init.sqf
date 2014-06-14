@@ -57,23 +57,8 @@ if (isServer) then {
 	_nil = [] execVM "\z\addons\dayz_server\missions\DayZ_Epoch_11.Chernarus\mission.sqf";
 	_serverMonitor = 	[] execVM "\z\addons\dayz_code\system\server_monitor.sqf";
 	
-	[] execVM "custom\Maps\GOC_LM_wlcr.sqf";
-	[] execVM "custom\Maps\GOC_TE_bash.sqf";
-	[] execVM "custom\Maps\GOC_TE_klen.sqf";
-	[] execVM "custom\Maps\GOC_TE_neaf.sqf";
-	[] execVM "custom\Maps\GOC_TE_stary.sqf";
-	[] execVM "custom\Maps\Mine_grotte.sqf";
-	[] execVM "custom\Maps\box_la_grotte.sqf";
-	[] execVM "custom\Maps\Fuel_Station.sqf";
-	[] execVM "custom\Maps\NWA_Base.sqf";
-	[] execVM "custom\Maps\Balota.sqf";
-	[] execVM "custom\Maps\Zelena.sqf";
-	[] execVM "custom\Maps\Black_Forest_Base.sqf";
-	[] execVM "custom\Maps\Zone_Alpha.sqf";
 	[] execVM "custom\graphics.sqf";
-	[] execVM "custom\Maps\Infinicity.sqf";
-	[] execVM "custom\Maps\ZedBalota.sqf";
-	[] execVM "custom\Maps\Tikhaya_City.sqf";
+
 };
 
 if (!isDedicated) then {
@@ -86,11 +71,18 @@ if (!isDedicated) then {
 	_id = player addEventHandler ["Respawn", {_id = [] spawn player_death;}];
 	_playerMonitor = 	[] execVM "\z\addons\dayz_code\system\player_monitor.sqf";	
 	
-	//anti Hack
-	[] execVM "\z\addons\dayz_code\system\antihack.sqf";
-	[] execVM "custom\service_point\service_point.sqf";
-	[] execVM "custom\elevator\elevator.init.sqf";
+	//Anti-Hack with admin tool exception
+	_adminListHandle = [] execVM "admintools\AdminList.sqf";
+	waitUntil{scriptDone _adminListHandle};
+	if ( !((getPlayerUID player) in AdminList) && !((getPlayerUID player) in ModList) && !((getPlayerUID player) in tempList)) then 
+	{
+		[] execVM "\z\addons\dayz_code\system\antihack.sqf";
+	};
+	//Custom Scripts and Plugins
 	[] execVM "custom\debug_monitor.sqf";
+	[] execVM "custom\welcome_credits.sqf";
+	[] execVM "custom\service_point\service_point.sqf";
+	[] execVM "custom\elevator\elevator_init.sqf";
 	_nil = [] execVM "custom\JAEM\EvacChopper_init.sqf";
 	[] execVM "custom\lights\building_lights.sqf";
 	[] execVM "custom\lights\street_lights.sqf";
@@ -98,7 +90,7 @@ if (!isDedicated) then {
 
 	
 };
-
+[] execVM "admintools\Activate.sqf";
 #include "\z\addons\dayz_code\system\REsec.sqf"
 
 //Start Dynamic Weather
@@ -111,5 +103,4 @@ execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
 [] execVM "custom\loadout.sqf";
 [] execVM "R3F_ARTY_AND_LOG\init.sqf";
 [] execVM "custom\actions\activate.sqf";
-[] execVM "admintools\Activate.sqf";
-[] execVM "custom\RC\init.sqf";
+[] execVM "RC\init.sqf";

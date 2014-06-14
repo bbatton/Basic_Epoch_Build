@@ -85,9 +85,10 @@ class RscProgressNotFreeze
 	h = 0.039216;
 	texture = "#(argb,8,8,3)color(0,0,0,0)";
 };
+
 class RscTitles
 {
-	#include "custom\RC\desc_inc.h"
+	#include "RC\desc_inc.h"
 };
 //
 // the loading screen itself
@@ -155,4 +156,3 @@ class DayZ_loadingScreen
 };
 #include "admintools\dialog.hpp"
 #include "custom\snap_build\points.hpp"
-#include "addons\SARGE\SAR_define.hpp"

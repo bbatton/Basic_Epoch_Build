@@ -1,7 +1,7 @@
-_pathtoscripts = "actions\";
+_pathtoscripts = "custom\actions\";
 _EXECscript1 = 'player execVM "'+_pathtoscripts+'%1"';
-_EXECscript2 = '["%1"] execVM "actions\FunMenu\morph.sqf"';
-_EXECscript3 = '["%1"] execVM "actions\FunMenu\movements.sqf"';
+_EXECscript2 = '["%1"] execVM "custom\actions\FunMenu\morph.sqf"';
+_EXECscript3 = '["%1"] execVM "custom\actions\FunMenu\movements.sqf"';
 
 
 if(isNil "AdminList") then {
