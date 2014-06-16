@@ -103,4 +103,4 @@ execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
 [] execVM "custom\loadout.sqf";
 [] execVM "R3F_ARTY_AND_LOG\init.sqf";
 [] execVM "custom\actions\activate.sqf";
-//[] execVM "RC\init.sqf";
+[] execVM "RC\init.sqf";

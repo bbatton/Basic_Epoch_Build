@@ -85,14 +85,13 @@ class RscProgressNotFreeze
 	h = 0.039216;
 	texture = "#(argb,8,8,3)color(0,0,0,0)";
 };
-
 class RscTitles
 {
 	#include "RC\desc_inc.h"
 };
-//
+
 // the loading screen itself
-//
+
 class DayZ_loadingScreen
 { 
 	idd = -1;
