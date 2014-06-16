@@ -58,7 +58,21 @@ if (isServer) then {
 	_serverMonitor = 	[] execVM "\z\addons\dayz_code\system\server_monitor.sqf";
 	
 	[] execVM "custom\graphics.sqf";
-
+	[] execVM "custom\Maps\GOC_LM_wlcr.sqf";
+	[] execVM "custom\Maps\GOC_TE_bash.sqf";
+	[] execVM "custom\Maps\GOC_TE_klen.sqf";
+	[] execVM "custom\Maps\GOC_TE_neaf.sqf";
+	[] execVM "custom\Maps\GOC_TE_stary.sqf";
+	[] execVM "custom\Maps\Fuel_Station.sqf";
+	[] execVM "custom\Maps\NWA_Base.sqf";
+	[] execVM "custom\Maps\Balota.sqf";
+	[] execVM "custom\Maps\Zelena.sqf";
+	[] execVM "custom\Maps\Black_Forest_Base.sqf";
+	[] execVM "custom\Maps\Zone_Alpha.sqf";
+	[] execVM "custom\Maps\Infinicity.sqf";
+	[] execVM "custom\Maps\ZedBalota.sqf";
+	//[] execVM "custom\Maps\Tikhaya_City.sqf";
+	
 };
 
 if (!isDedicated) then {
