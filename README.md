@@ -110,20 +110,13 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 
 	~~~~java
 	AdminList = [
-	
-"999999999", // <Your In-Game Name here>
-
+	"999999999", // <Your In-Game Name here>
 	"999999999" // <Admin In-Game Name>
-	
-];
-	
-ModList = [
-
+	];
+	ModList = [
 	"999999999", // <Moderator In-Game Name>
-	
-"999999999" // <Moderator In-Game Name>
-	
-];
+	"999999999" // <Moderator In-Game Name>
+	];
 	~~~~
 
 
