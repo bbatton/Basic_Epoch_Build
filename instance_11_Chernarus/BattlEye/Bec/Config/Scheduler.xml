@@ -6,7 +6,7 @@
 	<delay>000000</delay>
 	<day>1,2,3,4,5,6,7</day>
 	<loop>1</loop>
-	<cmd>say -1 Admins: Grave, Nox, Lupintheblerd</cmd>
+	<cmd>say -1 Admins</cmd>
 	<cmdtype>0</cmdtype>
 </job>
 
