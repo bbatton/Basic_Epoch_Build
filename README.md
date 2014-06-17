@@ -3,18 +3,18 @@ Epoch Builds
 This build is made to allow for new hosters to have a build of dayz epoch that already has most features players look for configured and working from the start. As time goes on each release version will have more and more features allowing for hosters to take different flavors of epoch builds with different server loads based on the amount of content in each build.
 
 # Table of Contents:
-* [Features](https://github.com/bbatton/Basic_Epoch_Build#Features)
-* [Installing Vanilla Epoch](https://github.com/bbatton/Basic_Epoch_Build#Installing-Vanilla-Epoch)
-* [Installing Release Builds](https://github.com/bbatton/Basic_Epoch_Build#Installing-Releases)
-* [Configuring Mods](https://github.com/bbatton/Basic_Epoch_Build#Configuring-Mods)
-  * [Loadout Script](https://github.com/bbatton/Basic_Epoch_Build####Loadout-Script-Config)
-  * [Admin Tools](https://github.com/bbatton/Basic_Epoch_Build####Admin-Tools)
-  * [Custom Loading Image](https://github.com/bbatton/Basic_Epoch_Build####Custom-Loading-Image)
-* [Installing BEC/Rcon](https://github.com/bbatton/Basic_Epoch_Build#Installing-BEC-Rcon)
-* [Updating Release Build](https://github.com/bbatton/Basic_Epoch_Build#Updating-To-New-Release)
-* [FAQ](https://github.com/bbatton/Basic_Epoch_Build#FAQ)
-* [Error Reporting](https://github.com/bbatton/Basic_Epoch_Build#Error-Reporting)
-* [Credits](https://github.com/bbatton/Basic_Epoch_Build#Credits)
+* [Features](https://github.com/bbatton/Basic_Epoch_Build#features)
+* [Installing Vanilla Epoch](https://github.com/bbatton/Basic_Epoch_Build#installing-vanilla-epoch)
+* [Installing Release Builds](https://github.com/bbatton/Basic_Epoch_Build#installing-release-builds)
+* [Configuring Mods](https://github.com/bbatton/Basic_Epoch_Build#configuring-mods)
+  * [Loadout Script](https://github.com/bbatton/Basic_Epoch_Build#loadout-script-config)
+  * [Admin Tools](https://github.com/bbatton/Basic_Epoch_Build#admin-tools)
+  * [Custom Loading Image](https://github.com/bbatton/Basic_Epoch_Build#custom-loading-image)
+* [Installing BEC/Rcon](https://github.com/bbatton/Basic_Epoch_Build#installing-bec-rcon)
+* [Updating Release Build](https://github.com/bbatton/Basic_Epoch_Build#updating-to-new-release)
+* [FAQ](https://github.com/bbatton/Basic_Epoch_Build#faq)
+* [Error Reporting](https://github.com/bbatton/Basic_Epoch_Build#error-reporting)
+* [Credits](https://github.com/bbatton/Basic_Epoch_Build#credits)
 
 # Features:
 #### For Hosters:
@@ -54,7 +54,7 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 ### There are mods that still need to be configured to meet your server needs, so please read and perform all tasks below.
 
 
-#### Welcom Script Confige
+#### Welcome Script Confige
 
 
 1. If you have managed some how to not get get NotePad ++ by now, well it is time to get it.
@@ -88,7 +88,7 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 #### Loadout Script Config
 
 
-1. Now go to the loadout.sqf and open it with notepad++, this file determines what everyplayer spawns in with. Locat this section at the top
+1. Now go to the loadout.sqf and open it with notepad++, this file determines what everyplayer spawns in with. Locate this section at the top
 
 	~~~~java
 	_Admin = [""]; // Admins:
@@ -110,20 +110,13 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 
 	~~~~java
 	AdminList = [
-	
-"999999999", // <Your In-Game Name here>
-
+	"999999999", // <Your In-Game Name here>
 	"999999999" // <Admin In-Game Name>
-	
-];
-	
-ModList = [
-
+	];
+	ModList = [
 	"999999999", // <Moderator In-Game Name>
-	
-"999999999" // <Moderator In-Game Name>
-	
-];
+	"999999999" // <Moderator In-Game Name>
+	];
 	~~~~
 
 
@@ -146,7 +139,7 @@ ModList = [
 #### Custom Loading Image
 
 
-1. I have included a custom image as place holder. The image is located in the MPMissions\DayZ_Epoch_11.Chernarus directory and the image is called loadingscreen.jpg
+1. I have included a custom image as a place holder. The image is located in the MPMissions\DayZ_Epoch_11.Chernarus directory and the image is called loadingscreen.jpg
 
 
 1. You can replace this image with what ever image you want but it has to be 2048 pixels by 1024 pixels and be a .JPG in order to work. So just overwrite loadingscreen.jpg with your image that also has to be name loadingscreen.jpg
@@ -155,7 +148,7 @@ ModList = [
 # Installing BEC Rcon
 
 
-1. This the part where we set up the auto restart and ingame battleye messaging system. So now go back to the server root directory which is the install folder. Find the file called BEC control Epoch and open it with Notepad++.
+1. This part is where we set up the auto restart and ingame battleye messaging system. So now go back to the server root directory which is the install folder. Find the file called BEC control Epoch and open it with Notepad++.
 
 1. Inside this .bat file we are going to be changing the file path so it reads into the correct directory in which your BEC files are located. So go ahead and find the full file path from your drive to the file located in the server files instance_11_Chernarus\BattlEye\Bec and paste it over the file path shown below inside the quotation marks.
 
@@ -208,7 +201,7 @@ ModList = [
 	~~~~
 
 
-1. To change these messages only change the text after say -1 or the message won't show. Below is and example of me changing what is shown above. Change the message to what you want in this same fashion as below.
+1. To change these messages only change the text after say -1 or the message won't show. Below is an example of me changing what is shown above. Change the message to what you want in the same fashion as below.
 
 
 	~~~~java
@@ -235,10 +228,10 @@ ModList = [
 1. The restart schedule starts after the messages and they are already configured for 3 hour restarts with warnings at 15 min and 1 min until restart. So Just save the file and exit.
 
 
-1. Now go to the Config.cfg file in the same directory and open it with NotePad++. This file as it sounds configures allot of setting for the BattlEye Extended Contoler. Here you will be changing the IP to the IP of your server, not your local IP but your WAN IP. You can find out what is is by googling my ip, which google then will display your ip to you.
+1. Now go to the Config.cfg file in the same directory and open it with NotePad++. This file as it sounds configures allot of setting for the BattlEye Extended Contoler. Here you will be changing the IP to the IP of your server, not your local IP but your WAN IP. You can find out what it is by googling my ip, which google then will display your ip to you.
 
 
-1. Next you will be changing the file path shown below to where your dayz server to instance_11_Chernarus\BattlEye like i have done for my computer below. Only change what is after the = sign.
+1. Next you will be changing the file path shown below to where your instance_11_Chernarus\BattlEye is installed in your dayz epoch server directory like i have done for my computer below. Only change what is after the = sign.
 
 
 	~~~~java
@@ -267,7 +260,10 @@ ModList = [
 	> 1. Next you can go to the Admins.xml file and put your gamertage and GUID into the file. This will simply just display to all players that a admin just logged into the server. I don't really recommend this feature since you are more likely to have players breaking rules only when you are offline which makes them harder to get banned. 
 
 
-1. Now go into the Bec folder and open the file called BEServer.cfg and open it with NotePad++. In this file replace passwordhere with the password that you created for your vanilla Hive.ext file this will then give BEC full priviledges to your server. Save and exit. 
+1. Now go into the Bec folder and open the file called BEServer.cfg and open it with NotePad++. In this file replace passwordhere with the password that you created for your vanilla Hive.ext file, this will then give BEC full priviledges to your server. Save and exit. 
+
+
+1. First start up xamp and turn on the apache server and mySQL server. Now to start your server launch the DayZ_Epoch_instance_11_Chernarus.bat file and then the BEC control Epoch.bat file. Your server should now be running and BEC will restart the server at 3am 6am 9am 12pm 3pm 6pm 9pm 12am.
 
 
 #### CONGRATS EPOCH BUILD v1.0 "ISENGARD MINES" INSTALL IS NOW COMPLETE!!!
