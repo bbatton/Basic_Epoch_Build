@@ -4,17 +4,17 @@ This build is made to allow for new hosters to have a build of dayz epoch that a
 
 # Table of Contents:
 * [Features](https://github.com/bbatton/Basic_Epoch_Build#features)
-* [Installing Vanilla Epoch](https://github.com/bbatton/Basic_Epoch_Build#Installing-Vanilla-Epoch)
-* [Installing Release Builds](https://github.com/bbatton/Basic_Epoch_Build#Installing-Releases)
-* [Configuring Mods](https://github.com/bbatton/Basic_Epoch_Build#Configuring-Mods)
-  * [Loadout Script](https://github.com/bbatton/Basic_Epoch_Build####Loadout-Script-Config)
-  * [Admin Tools](https://github.com/bbatton/Basic_Epoch_Build####Admin-Tools)
-  * [Custom Loading Image](https://github.com/bbatton/Basic_Epoch_Build####Custom-Loading-Image)
-* [Installing BEC/Rcon](https://github.com/bbatton/Basic_Epoch_Build#Installing-BEC-Rcon)
-* [Updating Release Build](https://github.com/bbatton/Basic_Epoch_Build#Updating-To-New-Release)
-* [FAQ](https://github.com/bbatton/Basic_Epoch_Build#FAQ)
-* [Error Reporting](https://github.com/bbatton/Basic_Epoch_Build#Error-Reporting)
-* [Credits](https://github.com/bbatton/Basic_Epoch_Build#Credits)
+* [Installing Vanilla Epoch](https://github.com/bbatton/Basic_Epoch_Build#installing-vanilla-epoch)
+* [Installing Release Builds](https://github.com/bbatton/Basic_Epoch_Build#installing-releases)
+* [Configuring Mods](https://github.com/bbatton/Basic_Epoch_Build#configuring-mods)
+  * [Loadout Script](https://github.com/bbatton/Basic_Epoch_Build####loadout-script-config)
+  * [Admin Tools](https://github.com/bbatton/Basic_Epoch_Build####admin-tools)
+  * [Custom Loading Image](https://github.com/bbatton/Basic_Epoch_Build####custom-loading-image)
+* [Installing BEC/Rcon](https://github.com/bbatton/Basic_Epoch_Build#installing-bec-rcon)
+* [Updating Release Build](https://github.com/bbatton/Basic_Epoch_Build#updating-to-new-release)
+* [FAQ](https://github.com/bbatton/Basic_Epoch_Build#faq)
+* [Error Reporting](https://github.com/bbatton/Basic_Epoch_Build#error-reporting)
+* [Credits](https://github.com/bbatton/Basic_Epoch_Build#credits)
 
 # Features:
 #### For Hosters:
