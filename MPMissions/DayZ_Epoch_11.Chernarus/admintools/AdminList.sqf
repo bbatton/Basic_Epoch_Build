@@ -1,7 +1,7 @@
 // Epoch Admin Tools
 //Replace 111111111 with your ID. 
 AdminList = [
-"169085126", // <Your In-Game Name here>
+"999999999", // <Your In-Game Name here>
 "999999999" // <Admin In-Game Name>
 ];
 ModList = [

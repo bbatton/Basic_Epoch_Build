@@ -1,4 +1,4 @@
-_Admin = [""]; // Admins: Nox, Grave, Lupin
+_Admin = [""]; // Admins:
 _Moderator = [""]; // Mods: 
 _Donator = [""]; // Donator
 _ProDonor = [""]; // ProDonors
