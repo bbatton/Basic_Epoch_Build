@@ -3,7 +3,7 @@ Epoch Builds
 This build is made to allow for new hosters to have a build of dayz epoch that already has most features players look for configured and working from the start. As time goes on each release version will have more and more features allowing for hosters to take different flavors of epoch builds with different server loads based on the amount of content in each build.
 
 # Table of Contents:
-* [Features](https://github.com/bbatton/Basic_Epoch_Build#Features)
+* [Features](https://github.com/bbatton/Basic_Epoch_Build#features)
 * [Installing Vanilla Epoch](https://github.com/bbatton/Basic_Epoch_Build#Installing-Vanilla-Epoch)
 * [Installing Release Builds](https://github.com/bbatton/Basic_Epoch_Build#Installing-Releases)
 * [Configuring Mods](https://github.com/bbatton/Basic_Epoch_Build#Configuring-Mods)
