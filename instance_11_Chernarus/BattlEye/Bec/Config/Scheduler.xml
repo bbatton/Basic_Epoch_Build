@@ -6,7 +6,7 @@
 	<delay>000000</delay>
 	<day>1,2,3,4,5,6,7</day>
 	<loop>1</loop>
-	<cmd>say -1 Admins</cmd>
+	<cmd>say -1 Admins:</cmd>
 	<cmdtype>0</cmdtype>
 </job>
 
@@ -48,7 +48,7 @@
 </job>
 
 <job id="5">
-	<time>21:00:10</time>
+	<time>06:00:10</time>
 	<delay>000000</delay>
 	<day>1,2,3,4,5,6,7</day>
 	<loop>0</loop>
@@ -87,7 +87,7 @@
 </job>
 
 <job id="9">
-	<time>21:00:10</time>
+	<time>09:00:10</time>
 	<delay>000000</delay>
 	<day>1,2,3,4,5,6,7</day>
 	<loop>0</loop>
@@ -126,7 +126,7 @@
 </job>
 
 <job id="13">
-	<time>21:00:10</time>
+	<time>12:00:10</time>
 	<delay>000000</delay>
 	<day>1,2,3,4,5,6,7</day>
 	<loop>0</loop>
@@ -166,7 +166,7 @@
 </job>
 
 <job id="17">
-	<time>21:00:10</time>
+	<time>15:00:10</time>
 	<delay>000000</delay>
 	<day>1,2,3,4,5,6,7</day>
 	<loop>0</loop>
@@ -206,7 +206,7 @@
 </job>
 
 <job id="21">
-	<time>21:00:10</time>
+	<time>18:00:10</time>
 	<delay>000000</delay>
 	<day>1,2,3,4,5,6,7</day>
 	<loop>0</loop>
@@ -286,7 +286,7 @@
 </job>
 
 <job id="29">
-	<time>21:00:10</time>
+	<time>00:00:10</time>
 	<delay>000000</delay>
 	<day>1,2,3,4,5,6,7</day>
 	<loop>0</loop>
@@ -326,7 +326,7 @@
 </job>
 
 <job id="33">
-	<time>21:00:10</time>
+	<time>03:00:10</time>
 	<delay>000000</delay>
 	<day>1,2,3,4,5,6,7</day>
 	<loop>0</loop>
