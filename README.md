@@ -313,7 +313,23 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 
 * I believe in giving credit where credit is due so thank you creators of the Epoch Mod
 * Thanks to all the modders who's work I have included into my releases
-  * I will be going through to find all your names to credit you here sometime soon
+  * Epoch Admin Tools		by NoxSicarius
+  * JAEM-Evac Chopper		by OtterNas3
+  * Radio Communication		by ilikepizza
+  * Build Snap Extended		by OtterNas3
+  * =BTC=_Logistic			by Torndeco
+  * R3F Tow/Lift			by ArmaHolics
+  * Zombie Free Bases		by MadMartyr
+  * DZAI Mission System		by Torndeco
+  * Welcome Messages 		by ZedBuster
+  * Self Bloodbag			by Krixes
+  * Vehicle Service Point	by Axe Cop
+  * Disable Tow/Lift		by MrTesla
+  * Dayz Night Lighting		by Axeman
+  * Safe Zones				by AlienX
+  * Ignite Tens				by Soul
+  * Take Clothes			by Zabn
+  * Drink Water				by ???
 
 
 #### Disclaimer
