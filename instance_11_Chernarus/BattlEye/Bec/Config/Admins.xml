@@ -18,15 +18,15 @@
 	-->
 	
 	<admin id="0">
-		<name></name>
-		<guid></guid>
+		<name>grave</name>
+		<guid>846e3d36f1c52662a763031b24fdc1e5</guid>
 		<group>0</group>
 		<groupname>Admin</groupname>
 	</admin>
 	
 	<admin id="1">
-		<name></name>
-		<guid></guid>
+		<name>Nox</name>
+		<guid>d3dcdd0b551cdadb5b1977041ad916f5</guid>
 		<group>0</group>
 		<groupname>Admin</groupname>
 	</admin>

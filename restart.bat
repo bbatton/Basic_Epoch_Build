@@ -2,7 +2,7 @@ timeout 10
 
 taskkill /im bec.exe
 
-timeout 5
+timeout 10
  
 :: start the server..
 set dayzpath="C:\Users\grave\Desktop\Dayz Server"
