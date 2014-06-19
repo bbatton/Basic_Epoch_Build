@@ -330,7 +330,8 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
   * Ignite Tens				by Soul
   * Take Clothes			by Zabn
   * Drink Water				by ???
-
+  * Master Key				by OtterNas3
+  * Vehicle GodMode Trader  by LunchboxCharlie
 
 #### Disclaimer
 
