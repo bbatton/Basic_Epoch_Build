@@ -101,6 +101,7 @@ if (!isDedicated) then {
 	[] execVM "custom\lights\building_lights.sqf";
 	[] execVM "custom\lights\street_lights.sqf";
 	[] execVM "custom\lights\tower_lights.sqf";
+	[] execVM "custom\VehicleKeyChanger\VehicleKeyChanger_init.sqf";
 
 	
 };
