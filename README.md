@@ -36,6 +36,9 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 ### Please follow and read each step to the installation. Ignoring any step will result in mods or the entire server not working at all.
 
 
+#### ***[ UEP Install Video Guide](http://youtu.be/yWMr70_eOUA)***
+
+
 1. Click ***[Download Zip](https://github.com/bbatton/Basic_Epoch_Build/archive/master.zip)*** on the right sidebar of this Github page.
 
 
