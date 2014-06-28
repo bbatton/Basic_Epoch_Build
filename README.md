@@ -2,6 +2,10 @@ Epoch Builds
 ==========
 This build is made to allow for new hosters to have a build of dayz epoch that already has most features players look for configured and working from the start. As time goes on each release version will have more and more features allowing for hosters to take different flavors of epoch builds with different server loads based on the amount of content in each build.
 
+
+# Currently out of date. UPDATED EPOCH 1.0.5.1 WILL RELEASE IN "FOREST" 1.1 BUILD!!
+
+
 # Table of Contents:
 * [Features](https://github.com/bbatton/Basic_Epoch_Build#features)
 * [Installing Vanilla Epoch](https://github.com/bbatton/Basic_Epoch_Build#installing-vanilla-epoch)
