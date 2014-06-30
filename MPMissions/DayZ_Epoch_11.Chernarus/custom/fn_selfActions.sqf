@@ -15,7 +15,6 @@ _inVehicle = (_vehicle != player);
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _canDo = (!r_drag_sqf && !r_player_unconscious && !_onLadder);
 
-_mags = magazines player;
 _nearLight = 	nearestObject [player,"LitObject"];
 _canPickLight = false;
 if (!isNull _nearLight) then {
@@ -37,6 +36,7 @@ if (_canPickLight && !dayz_hasLight && !_isPZombie) then {
 	s_player_grabflare = -1;
 	s_player_removeflare = -1;
 };
+
 if (DZE_HeliLift) then {
 	_hasAttached = _vehicle getVariable["hasAttached",false];
 	if(_inVehicle && (_vehicle isKindOf "Air") && ((([_vehicle] call FNC_getPos) select 2) < 30) && (speed _vehicle < 5) && (typeName _hasAttached == "OBJECT")) then {
@@ -90,7 +90,7 @@ if(_isPZombie) then {
 		_isZombie = cursorTarget isKindOf "zZombie_base";
 		_isHarvested = cursorTarget getVariable["meatHarvested",false];
 		_isMan = cursorTarget isKindOf "Man";
-		// Pzombie Gut human corpse or animal
+		// Pzombie Gut human corpse || animal
 		if (!alive cursorTarget && (_isAnimal || _isMan) && !_isZombie && !_isHarvested) then {
 			if (s_player_pzombiesfeed < 0) then {
 				s_player_pzombiesfeed = player addAction [localize "STR_EPOCH_ACTIONS_FEED", "\z\addons\dayz_code\actions\pzombie\pz_feed.sqf",cursorTarget, 3, true, false, "",""];
@@ -105,7 +105,7 @@ if(_isPZombie) then {
 	};
 };
 
-// Increase distance only if AIR OR SHIP
+// Increase distance only if AIR || SHIP
 _allowedDistance = 4;
 _isAir = cursorTarget isKindOf "Air";
 _isShip = cursorTarget isKindOf "Ship";
@@ -127,7 +127,7 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 	_isVehicletype = _typeOfCursorTarget in ["ATV_US_EP1","ATV_CZ_EP1"];
 	_isnewstorage = _typeOfCursorTarget in DZE_isNewStorage;
 	
-	// get items and magazines only once
+	// get items && magazines only once
 	_magazinesPlayer = magazines player;
 
 	//boiled Water
@@ -158,7 +158,6 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 	} count _itemsPlayer;
 
 	_hasKnife = 	"ItemKnife" in _itemsPlayer;
-	_hasMatches = 	"ItemMatchbox" in _itemsPlayer;
 	_hasToolbox = 	"ItemToolbox" in _itemsPlayer;
 
 	_isMan = _cursorTarget isKindOf "Man";
@@ -172,7 +171,7 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 	_isWreckBuilding = _typeOfCursorTarget in DZE_isWreckBuilding;
 	_isModular = _cursorTarget isKindOf "ModularItems";
 	_isModularDoor = _typeOfCursorTarget in ["Land_DZE_WoodDoor","Land_DZE_LargeWoodDoor","Land_DZE_GarageWoodDoor","CinderWallDoor_DZ","CinderWallDoorSmall_DZ"];
-	
+
 	_isRemovable = _typeOfCursorTarget in DZE_isRemovable;
 	_isDisallowRepair = _typeOfCursorTarget in ["M240Nest_DZ"];
 
@@ -237,12 +236,11 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
                         if(_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
                                 _player_deleteBuild = true;
                         };		
-				};
-		
+				};	
 		// CURSOR TARGET VEHICLE
 		if(_isVehicle) then {
 			
-			//flip vehicle small vehicles by your self and all other vehicles with help nearby
+			//flip vehicle small vehicles by your self && all other vehicles with help nearby
 			if (!(canmove _cursorTarget) && (player distance _cursorTarget >= 2) && (count (crew _cursorTarget))== 0 && ((vectorUp _cursorTarget) select 2) < 0.5) then {
 				_playersNear = {isPlayer _x} count (player nearEntities ["CAManBase", 6]);
 				if(_isVehicletype || (_playersNear >= 2)) then {
@@ -287,8 +285,8 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 			_liftHelis = nearestObjects [player, DZE_HeliAllowTowFrom, 15];
 			{
 				if(!_found) then {
-					_posL = getPos _x;
-					_posC = getPos _cursorTarget;
+					_posL = [_x] call FNC_getPos;
+					_posC = [_cursorTarget] call FNC_getPos;
 					_height = (_posL select 2) - (_posC select 2);
 					_hasAttached = _x getVariable["hasAttached",false];
 					if(_height < 15 && _height > 5 && (typeName _hasAttached != "OBJECT")) then {
@@ -314,7 +312,7 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 		};
 	};
 	
-	// Allow Owner to lock and unlock vehicle  
+	// Allow Owner to lock && unlock vehicle  
 	if(_player_lockUnlock_crtl) then {
 		if (s_player_lockUnlock_crtl < 0) then {
 			_hasKey = _ownerID in _temp_keys;
@@ -373,7 +371,7 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 	};
 	
 	
-	//flip vehicle small vehicles by your self and all other vehicles with help nearby
+	//flip vehicle small vehicles by your self && all other vehicles with help nearby
 	if(_player_flipveh) then {
 		if (s_player_flipveh  < 0) then {
 			s_player_flipveh = player addAction [format[localize "str_actions_flipveh",_text], "\z\addons\dayz_code\actions\player_flipvehicle.sqf",_cursorTarget, 1, true, true, "", ""];		
@@ -426,7 +424,7 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 	};
 
 
-	// Human Gut animal or zombie
+	// Human Gut animal || zombie
 	if (_player_butcher) then {
 		if (s_player_butcher < 0) then {
 			if(_isZombie) then {
@@ -506,7 +504,7 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 		s_player_fireout = -1;
 	};
 	
-	if(_isTent and _hasMatches and _canDo and !_isMan) then {
+if(_isTent and _hasMatches and _canDo and !_isMan) then {
         if (s_player_igniteTent < 0) then {
             s_player_igniteTent = player addAction [format["Ignite Tent"], "custom\tent_ignite.sqf",cursorTarget, 1, true, true, "", ""];
         };
@@ -514,7 +512,6 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
         player removeAction s_player_igniteTent;
         s_player_igniteTent = -1;
     };
-	
 	//Packing my tent
 	if(_isTent && (player distance _cursorTarget < 3)) then {
 		if (_ownerID == dayz_characterID) then {
@@ -692,7 +689,7 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 			if((_cursorTarget getVariable ["GeneratorRunning", false])) then {
 				s_player_fillgen = player addAction [localize "STR_EPOCH_ACTIONS_GENERATOR1", "\z\addons\dayz_code\actions\stopGenerator.sqf",_cursorTarget, 0, false, true, "",""];				
 			} else {
-			// check if not filled and player has jerry.
+			// check if not filled && player has jerry.
 				if((_cursorTarget getVariable ["GeneratorFilled", false])) then {
 					s_player_fillgen = player addAction [localize "STR_EPOCH_ACTIONS_GENERATOR2", "\z\addons\dayz_code\actions\fill_startGenerator.sqf",_cursorTarget, 0, false, true, "",""];
 				} else {
@@ -707,6 +704,23 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 		s_player_fillgen = -1;
 	};
 
+	//Towing with tow truck
+	/*
+	if(_typeOfCursorTarget == "TOW_DZE") then {
+		if (s_player_towing < 0) then {
+			if(!(_cursorTarget getVariable ["DZEinTow", false])) then {
+				s_player_towing = player addAction [localize "STR_EPOCH_ACTIONS_ATTACH" "\z\addons\dayz_code\actions\tow_AttachStraps.sqf",_cursorTarget, 0, false, true, "",""];				
+			} else {
+				s_player_towing = player addAction [localize "STR_EPOCH_ACTIONS_DETACH", "\z\addons\dayz_code\actions\tow_DetachStraps.sqf",_cursorTarget, 0, false, true, "",""];				
+			};
+		};
+	} else {
+		player removeAction s_player_towing;
+		s_player_towing = -1;
+	};
+	*/
+
+
     //Sleep
 	if(_isTent && _ownerID == dayz_characterID) then {
 		if ((s_player_sleep < 0) && (player distance _cursorTarget < 3)) then {
@@ -717,7 +731,7 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 		s_player_sleep = -1;
 	};
 	
-	_clothesTaken = cursorTarget getVariable["clothesTaken",false];
+_clothesTaken = cursorTarget getVariable["clothesTaken",false];
  
     // Take clothes by Zabn @ BalotaBuddies.net
     if (_isMan and !_isAlive and !_isZombie and !_clothesTaken) then {
@@ -727,8 +741,7 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
     } else {
         player removeAction s_player_clothes;
         s_player_clothes = -1;
-        };
-	
+    };
 	//Repairing Vehicles
 	if ((dayz_myCursorTarget != _cursorTarget) && _isVehicle && !_isMan && _hasToolbox && (damage _cursorTarget < 1) && !_isDisallowRepair) then {
 		if (s_player_repair_crtl < 0) then {
@@ -742,7 +755,8 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 			{dayz_myCursorTarget removeAction _x} count s_player_repairActions;s_player_repairActions = [];
 			s_player_repair_crtl = -1;
 		};
-	};	
+	};
+
 	// All Traders
 	if (_isMan && !_isPZombie && _traderType in serverTraders) then {
 		
@@ -875,8 +889,6 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 	s_player_forceSave = -1;
 	player removeAction s_player_flipveh;
 	s_player_flipveh = -1;
-	player removeAction s_player_butcher_human;
-	s_player_butcher_human = -1;
 	player removeAction s_player_sleep;
 	s_player_sleep = -1;
 	player removeAction s_player_deleteBuild;
@@ -895,8 +907,7 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
     s_player_igniteTent = -1;
 	player removeAction s_player_fillfuel;
 	s_player_fillfuel = -1;
-	// Take Clothes by Zabn @ Balota Buddies
-    player removeAction s_player_clothes;
+	 player removeAction s_player_clothes;
     s_player_clothes = -1;
 	player removeAction s_player_studybody;
 	s_player_studybody = -1;
@@ -942,10 +953,6 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 	s_player_fuelauto = -1;
 	player removeAction s_player_fuelauto2;
 	s_player_fuelauto2 = -1;
-	player removeAction s_player_fillbottlewithrain;
-    s_player_fillbottlewithrain = -1;
-	player removeAction s_player_makePLBomb;
-    s_player_makePLBomb = -1;
 };
 
 
@@ -1019,5 +1026,3 @@ if (_canDrink) then {
         player removeAction s_player_drinkWater;
         s_player_drinkWater = -1;
     };
- 
-//-------------------------Drink Water End ----------------------------------------------

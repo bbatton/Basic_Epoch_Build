@@ -53,6 +53,7 @@ if (!isDedicated) then {
 	player_lockVault =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_lockVault.sqf";
 	player_updateGui =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_updateGui.sqf";
 	player_crossbowBolt =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_crossbowBolt.sqf";
+	//player_music = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_music.sqf";			//Used to generate ambient music
 	player_death =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_death.sqf";
 	player_switchModel =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_switchModel.sqf";
 	player_checkStealth =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_checkStealth.sqf";
@@ -612,9 +613,8 @@ if (!isDedicated) then {
 		eh_localCleanup = {};
 	};
 	if (!isDedicated) then {
-	player_build		= compile preprocessFileLineNumbers "custom\snap_build\player_build.sqf";
-	player_buildControls	= compile preprocessFileLineNumbers "custom\snap_build\player_buildControls.sqf";
-	snap_object		= compile preprocessFileLineNumbers "custom\snap_build\snap_object.sqf";
-};
-
+		player_build		= compile preprocessFileLineNumbers "custom\snap_build\player_build.sqf";
+		player_buildControls	= compile preprocessFileLineNumbers "custom\snap_build\player_buildControls.sqf";
+		snap_object		= compile preprocessFileLineNumbers "custom\snap_build\snap_object.sqf";
+	};
 initialized = true;

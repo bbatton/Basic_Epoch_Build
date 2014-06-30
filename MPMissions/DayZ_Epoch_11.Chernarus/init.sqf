@@ -93,11 +93,10 @@ if (!isDedicated) then {
 		[] execVM "\z\addons\dayz_code\system\antihack.sqf";
 	};
 	//Custom Scripts and Plugins
-	[] execVM "custom\debug_monitor.sqf";
 	[] execVM "custom\welcome_credits.sqf";
 	[] execVM "custom\service_point\service_point.sqf";
 	["elevator"] execVM "custom\elevator\elevator_init.sqf";
-	_nil = [] execVM "custom\JAEM\EvacChopper_init.sqf";
+	//_nil = [] execVM "custom\JAEM\EvacChopper_init.sqf";
 	[] execVM "custom\lights\building_lights.sqf";
 	[] execVM "custom\lights\street_lights.sqf";
 	[] execVM "custom\lights\tower_lights.sqf";
