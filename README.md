@@ -2,6 +2,13 @@ Epoch Builds
 ==========
 This build is made to allow for new hosters to have a build of dayz epoch that already has most features players look for configured and working from the start. As time goes on each release version will have more and more features allowing for hosters to take different flavors of epoch builds with different server loads based on the amount of content in each build.
 
+<<<<<<< HEAD
+=======
+
+# Currently out of date. UPDATED EPOCH 1.0.5.1 WILL RELEASE IN "FOREST" 1.1 BUILD!!
+
+
+>>>>>>> master
 # Table of Contents:
 * [Features](https://github.com/bbatton/Basic_Epoch_Build#features)
 * [Installing Vanilla Epoch](https://github.com/bbatton/Basic_Epoch_Build#installing-vanilla-epoch)
@@ -36,6 +43,12 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 ### Please follow and read each step to the installation. Ignoring any step will result in mods or the entire server not working at all.
 
 
+<<<<<<< HEAD
+=======
+#### ***[ UEP Install Video Guide](http://youtu.be/yWMr70_eOUA)***
+
+
+>>>>>>> master
 1. Click ***[Download Zip](https://github.com/bbatton/Basic_Epoch_Build/archive/master.zip)*** on the right sidebar of this Github page.
 
 

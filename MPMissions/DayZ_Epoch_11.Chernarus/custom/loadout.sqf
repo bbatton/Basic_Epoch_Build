@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 _Admin = ["",""]; // Admins: Nox, Grave, Lupin
+=======
+_Admin = [""]; // Admins:
+>>>>>>> master
 _Moderator = [""]; // Mods: 
 _Donator = [""]; // Donator
 _ProDonor = [""]; // ProDonors

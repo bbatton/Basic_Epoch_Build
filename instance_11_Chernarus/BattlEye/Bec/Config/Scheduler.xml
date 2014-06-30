@@ -7,8 +7,13 @@
 	<time>23:45:00</time>
 	<delay>000000</delay>
 	<day>1,2,3,4,5,6,7</day>
+<<<<<<< HEAD
 	<loop>0</loop>
 	<cmd>say -1 This server will restart in 15 minutes</cmd>
+=======
+	<loop>1</loop>
+	<cmd>say -1 Admins:</cmd>
+>>>>>>> master
 	<cmdtype>0</cmdtype>
 </job>
 
@@ -53,7 +58,11 @@
 <!-- 03:00 AM restart -->
 
 <job id="5">
+<<<<<<< HEAD
 	<time>02:45:00</time>
+=======
+	<time>06:00:10</time>
+>>>>>>> master
 	<delay>000000</delay>
 	<day>1,2,3,4,5,6,7</day>
 	<loop>0</loop>
@@ -89,7 +98,11 @@
 </job>
 
 <job id="9">
+<<<<<<< HEAD
 	<time>03:00:10</time>
+=======
+	<time>09:00:10</time>
+>>>>>>> master
 	<delay>000000</delay>
 	<day>1,2,3,4,5,6,7</day>
 	<loop>0</loop>
@@ -128,7 +141,11 @@
 </job>
 
 <job id="13">
+<<<<<<< HEAD
 	<time>06:00:00</time>
+=======
+	<time>12:00:10</time>
+>>>>>>> master
 	<delay>000000</delay>
 	<day>1,2,3,4,5,6,7</day>
 	<loop>0</loop>
@@ -185,8 +202,13 @@
 	<cmdtype>0</cmdtype>
 </job>
 
+<<<<<<< HEAD
 <job id="19">
 	<time>09:00:10</time>
+=======
+<job id="17">
+	<time>15:00:10</time>
+>>>>>>> master
 	<delay>000000</delay>
 	<day>1,2,3,4,5,6,7</day>
 	<loop>0</loop>
@@ -233,8 +255,13 @@
 	<cmdtype>0</cmdtype>
 </job>
 
+<<<<<<< HEAD
 <job id="24">
 	<time>12:00:10</time>
+=======
+<job id="21">
+	<time>18:00:10</time>
+>>>>>>> master
 	<delay>000000</delay>
 	<day>1,2,3,4,5,6,7</day>
 	<loop>0</loop>
@@ -331,8 +358,13 @@
 	<cmdtype>0</cmdtype>
 </job>
 
+<<<<<<< HEAD
 <job id="34">
 	<time>18:00:10</time>
+=======
+<job id="29">
+	<time>00:00:10</time>
+>>>>>>> master
 	<delay>000000</delay>
 	<day>1,2,3,4,5,6,7</day>
 	<loop>0</loop>
@@ -380,8 +412,13 @@
 	<cmdtype>0</cmdtype>
 </job>
 
+<<<<<<< HEAD
 <job id="39">
 	<time>21:00:10</time>
+=======
+<job id="33">
+	<time>03:00:10</time>
+>>>>>>> master
 	<delay>000000</delay>
 	<day>1,2,3,4,5,6,7</day>
 	<loop>0</loop>
