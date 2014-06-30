@@ -45,7 +45,7 @@ if ((count _evacFields) > 0) then
 {
 	{
 		_evacFieldID = _x getVariable ["CharacterID", "0"];
-		if (_evacCallerID == _evacFieldID || _evacCallerUID == _evacFieldID) then {
+		if ((_evacCallerID == _evacFieldID) || (_evacCallerUID == _evacFieldID)) then {
 			playerHasEvacField = true;
 			playersEvacField = _x;
 		};

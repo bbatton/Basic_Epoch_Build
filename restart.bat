@@ -1,8 +1,8 @@
 timeout 10
 
-taskkill /im bec.exe
+taskkill /f /im bec.exe
 
-timeout 10
+timeout 5
  
 :: start the server..
 set dayzpath="C:\Users\grave\Desktop\Dayz Server"
@@ -13,7 +13,9 @@ timeout 15
 :: start bec
 set becpath="C:\Users\grave\Desktop"
 cd /d %becpath%
-start /b "BattlEye Extended Control" "BEC control Epoch.bat"
+start  "BattlEye Extended Control" "BEC control Epoch.bat"
+
+taskkill /f /im cmd.exe
  
 cls
 @exit
