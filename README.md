@@ -64,76 +64,10 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 
 1. Go to the folder listed below inside of where you installed the server. This is where we are going to be configuring of our basic scripts.
 
-	>  MPMissions\Dayz_Epoch_11.Chernarus\custom
+	>  MPMissions\Dayz_Epoch_11.Chernarus\
 
 
-1. Open the file called welcome_credits.sqf with notepad++, find the section listed below.
-
-	~~~~java
-	_role1 = "Welcome to";
-	_role1names = ["Server Name Here"];
-	_role2 = "Admins";
-	_role2names = ["Admin Names Here"];
-	_role4 = "Team Speack Server Name Here";
-	_role4names = ["TS IP Here"];
-	_role5 = "Message of the Day";
-	_role5names = ["Put Message Here"];
-	_role6 = "Website";
-	_role6names = ["Website URL Here"];
-	~~~~
-
-1. Replace the text inside the quotations with what you want it to say. This will display everytime someone loads into your server. You can even remove entire sections of this code if you want less to be displayed. After you are finished save the fill then exit.
-
-
-#### Loadout Script Config
-
-
-1. Now go to the loadout.sqf and open it with notepad++, this file determines what everyplayer spawns in with. Locate this section at the top
-
-	~~~~java
-	_Admin = [""]; // Admins:
-	_Moderator = [""]; // Mods: 
-	_Donator = [""]; // Donator
-	_ProDonor = [""]; // ProDonors
-	~~~~
-1. Inside the brackets, inside the quotation marks put the UID of the players you want to be admins, mods, etc. Seperate UID with a comma.
-
-
-1. You can now save the file and exit or you can add more or less to what each type of player gets when they respawn, knowing the item class names in ARMA 2 are required to do this correctly but it is entirely optional.
-
-
-#### Admin Tools
-
-
-1. Go to the folder MPMissions\Dayz_Epoch_11.Chernarus\admintools. Then open the file AdminList.sqf with Notepad++. Now find this part of the script at the top of the file
-
-
-	~~~~java
-	AdminList = [
-	"999999999", // <Your In-Game Name here>
-	"999999999" // <Admin In-Game Name>
-	];
-	ModList = [
-	"999999999", // <Moderator In-Game Name>
-	"999999999" // <Moderator In-Game Name>
-	];
-	~~~~
-
-
-1. Now replace the "999999999" with your admins UID's and do the same with your moderators under Modlist. For every new player you add make sure to put a comma at the end like below.
-
-
-	~~~~java
-	AdminList = [
-	"9999999999",
-	"9999999999",
-	"9999999999",
-	"9999999999"
-	];
-	~~~~
-
-
-1. Great now your admin tools are now active, so save the file then exit.
+1. Open the file called Epoch_Build_Config.sqf with notepad++. In each section of this document their is a section to configure each mod, it is pretty self explanitory.
 
 
 #### Custom Loading Image
