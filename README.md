@@ -7,8 +7,6 @@ This build is made to allow for new hosters to have a build of dayz epoch that a
 * [Installing Vanilla Epoch](https://github.com/bbatton/Basic_Epoch_Build#installing-vanilla-epoch)
 * [Installing Release Builds](https://github.com/bbatton/Basic_Epoch_Build#installing-release-builds)
 * [Configuring Mods](https://github.com/bbatton/Basic_Epoch_Build#configuring-mods)
-  * [Loadout Script](https://github.com/bbatton/Basic_Epoch_Build#loadout-script-config)
-  * [Admin Tools](https://github.com/bbatton/Basic_Epoch_Build#admin-tools)
   * [Custom Loading Image](https://github.com/bbatton/Basic_Epoch_Build#custom-loading-image)
 * [Installing BEC/Rcon](https://github.com/bbatton/Basic_Epoch_Build#installing-bec-rcon)
 * [Updating Release Build](https://github.com/bbatton/Basic_Epoch_Build#updating-to-new-release)
@@ -54,9 +52,6 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 ### There are mods that still need to be configured to meet your server needs, so please read and perform all tasks below.
 
 
-#### Welcome Script Confige
-
-
 1. If you have managed some how to not get get NotePad ++ by now, well it is time to get it.
 
 	> [NotePad++ Download](http://download.tuxfamily.org/notepadplus/6.6.6/npp.6.6.6.Installer.exe)
@@ -67,7 +62,7 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 	>  MPMissions\Dayz_Epoch_11.Chernarus\
 
 
-1. Open the file called Epoch_Build_Config.sqf with notepad++. In each section of this document their is a section to configure each mod, it is pretty self explanitory.
+1. Open the file called Epoch_Build_Config.sqf with notepad++. In each section of this document there is a section to configure each mod, it is pretty self explanitory each section has a detailed description.
 
 
 #### Custom Loading Image
