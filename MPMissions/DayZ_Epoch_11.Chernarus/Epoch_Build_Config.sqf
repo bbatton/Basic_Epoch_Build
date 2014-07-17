@@ -47,7 +47,8 @@ EBC_ProDonator_5 = "99999999999";
 /*
 This section is to activate the admin tools for your admins you want to have access to the
 tool set. This section is different than the loadout admin confige for casses where you don't
-want admins or mods to have a specialized loadout on respawn.
+want admins or mods to have a specialized loadout on respawn. Mods in this admin tool get acess
+to a limit number of features in the admin tool set to only allow them to help in small cases.
 */
 
 EBC_Admin_Tool_1 = "169085126";
@@ -64,7 +65,7 @@ EBC_Mod_Tool_5 = "99999999999";
 
 /*
 This section is set up what server rules are displayed when a player clicks on server rules
-in the custom actions menu. Change them to what ever you want.
+in the custom actions menu. Change them to what ever you want but keep it within the parentheses provided.
 */
 EBC_Rule_1 = "No basing in high loot areas";
 EBC_Rule_2 = "No camping traders for any reason";
