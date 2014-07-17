@@ -202,7 +202,7 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 # Updating To New Release
 
 
-1. Updating is made pretty easy with these builds all you have to do is read the change log for each release so see what has been updated and then drag and drop those new files or folders into your install. 
+1. Updating is made pretty easy with these builds all you have to do is read the change log for each release so see what has been updated and then drag and drop those new files or folders into your install after you have deleted the old file that has changed. 
 
 
 1. It is not suggested that you just copy over the entire new release and let it overwrite your old release files as that will make you have to go through this read me all over again configuring all the addons. So it is best to only overwrite what has changed for the newer releases.
@@ -232,7 +232,7 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 # Error Reporting
 
 
-1. Before you try to contact more or try to submit an issue please re-read the installation and instructions to make sure that is not something you missed or didn't do correctly. If you are sure that you did it right please post inside of the dayz epoch forum in which I originally listed this release and I will respond to your issue as quickly as possible. 
+1. Before you try to contact me or try to submit an issue please re-read the installation instructions to make sure that is not something you missed or didn't do correctly. If you are sure that you did it right please post inside of the dayz epoch forum or through my youtube in which I originally listed this release and I will respond to your issue as quickly as possible. 
 
 
 1. If it is found that your problem is indeed a bug an issue will be created on my github repo for that particular release which will highly detail the problem and give you a place to check on the progress of a patch. When a patch is made for that bug the issue will list the update and close the issue. After this has happend the patch will be live for you to download.
