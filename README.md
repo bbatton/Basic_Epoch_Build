@@ -7,8 +7,6 @@ This build is made to allow for new hosters to have a build of dayz epoch that a
 * [Installing Vanilla Epoch](https://github.com/bbatton/Basic_Epoch_Build#installing-vanilla-epoch)
 * [Installing Release Builds](https://github.com/bbatton/Basic_Epoch_Build#installing-release-builds)
 * [Configuring Mods](https://github.com/bbatton/Basic_Epoch_Build#configuring-mods)
-  * [Loadout Script](https://github.com/bbatton/Basic_Epoch_Build#loadout-script-config)
-  * [Admin Tools](https://github.com/bbatton/Basic_Epoch_Build#admin-tools)
   * [Custom Loading Image](https://github.com/bbatton/Basic_Epoch_Build#custom-loading-image)
 * [Installing BEC/Rcon](https://github.com/bbatton/Basic_Epoch_Build#installing-bec-rcon)
 * [Updating Release Build](https://github.com/bbatton/Basic_Epoch_Build#updating-to-new-release)
@@ -36,6 +34,9 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 ### Please follow and read each step to the installation. Ignoring any step will result in mods or the entire server not working at all.
 
 
+#### Project is on the latest Epoch Verison 1.0.5.1
+
+
 1. Click ***[Download Zip](https://github.com/bbatton/Basic_Epoch_Build/archive/master.zip)*** on the right sidebar of this Github page.
 
 
@@ -51,10 +52,7 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 
 # Configuring Mods
 
-### There are mods that still need to be configured to meet your server needs, so please read and perform all tasks below.
-
-
-#### Welcome Script Confige
+#### Mods in this project can be configured more in depth by the hoster beyond the initial install, however that will require knowledge of sqf and I don't take reponsibility for things that happen if you mess up.
 
 
 1. If you have managed some how to not get get NotePad ++ by now, well it is time to get it.
@@ -67,7 +65,7 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 	>  MPMissions\Dayz_Epoch_11.Chernarus\
 
 
-1. Open the file called Epoch_Build_Config.sqf with notepad++. In each section of this document their is a section to configure each mod, it is pretty self explanitory.
+1. Open the file called Epoch_Build_Config.sqf with notepad++. In each section of this document there is a section to configure each mod, it is pretty self explanitory.
 
 
 #### Custom Loading Image
@@ -200,13 +198,13 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 1. First start up xamp and turn on the apache server and mySQL server. Now to start your server launch the DayZ_Epoch_instance_11_Chernarus.bat file and then the BEC control Epoch.bat file. Your server should now be running and BEC will restart the server at 3am 6am 9am 12pm 3pm 6pm 9pm 12am.
 
 
-#### CONGRATS EPOCH BUILD v1.0 "ISENGARD MINES" INSTALL IS NOW COMPLETE!!!
+#### CONGRATS EPOCH BUILD v1.1 "Forest" INSTALL IS NOW COMPLETE!!!
 
 
 # Updating To New Release
 
 
-1. Updating is made pretty easy with these builds all you have to do is read the change log for each release so see what has been updated and then drag and drop those new files or folders into your install. 
+1. Updating is made pretty easy with these builds all you have to do is read the change log for each release so see what has been updated and then drag and drop those new files or folders into your install after deleted the old ones that have been changed.
 
 
 1. It is not suggested that you just copy over the entire new release and let it overwrite your old release files as that will make you have to go through this read me all over again configuring all the addons. So it is best to only overwrite what has changed for the newer releases.
@@ -236,7 +234,7 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 # Error Reporting
 
 
-1. Before you try to contact more or try to submit an issue please re-read the installation and instructions to make sure that is not something you missed or didn't do correctly. If you are sure that you did it right please post inside of the dayz epoch forum in which I originally listed this release and I will respond to your issue as quickly as possible. 
+1. Before you try to contact me or try to submit an issue please re-read the installation instructions to make sure that is not something you missed or didn't do correctly. If you are sure that you did it right please post inside of the dayz epoch forum or my youtube page in which I originally listed this project and I will respond to your issue as quickly as possible. 
 
 
 1. If it is found that your problem is indeed a bug an issue will be created on my github repo for that particular release which will highly detail the problem and give you a place to check on the progress of a patch. When a patch is made for that bug the issue will list the update and close the issue. After this has happend the patch will be live for you to download.
@@ -266,6 +264,7 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
   * Drink Water				by ???
   * Master Key				by OtterNas3
   * Vehicle GodMode Trader  by LunchboxCharlie
+  * Debug Menu				by NoxSicarius
 
 #### Disclaimer
 
