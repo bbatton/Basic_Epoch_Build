@@ -74,7 +74,7 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 1. I have included a custom image as a place holder. The image is located in the MPMissions\DayZ_Epoch_11.Chernarus directory and the image is called loadingscreen.jpg
 
 
-1. You can replace this image with what ever image you want but it has to be 2048 pixels by 1024 pixels and be a .JPG in order to work. So just overwrite loadingscreen.jpg with your image that also has to be name loadingscreen.jpg
+1. You can replace this image with what ever image you want but it has to be 2048 pixels by 1024 pixels and be a .JPG in order to work. So just overwrite loadingscreen.jpg with your image which also has to be titled loadingscreen.jpg or it won't work.
 
 
 # Installing BEC Rcon
