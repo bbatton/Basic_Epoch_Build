@@ -7,8 +7,6 @@ This build is made to allow for new hosters to have a build of dayz epoch that a
 * [Installing Vanilla Epoch](https://github.com/bbatton/Basic_Epoch_Build#installing-vanilla-epoch)
 * [Installing Release Builds](https://github.com/bbatton/Basic_Epoch_Build#installing-release-builds)
 * [Configuring Mods](https://github.com/bbatton/Basic_Epoch_Build#configuring-mods)
-  * [Loadout Script](https://github.com/bbatton/Basic_Epoch_Build#loadout-script-config)
-  * [Admin Tools](https://github.com/bbatton/Basic_Epoch_Build#admin-tools)
   * [Custom Loading Image](https://github.com/bbatton/Basic_Epoch_Build#custom-loading-image)
 * [Installing BEC/Rcon](https://github.com/bbatton/Basic_Epoch_Build#installing-bec-rcon)
 * [Updating Release Build](https://github.com/bbatton/Basic_Epoch_Build#updating-to-new-release)
@@ -67,7 +65,7 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 	>  MPMissions\Dayz_Epoch_11.Chernarus\
 
 
-1. Open the file called Epoch_Build_Config.sqf with notepad++. In each section of this document their is a section to configure each mod, it is pretty self explanitory.
+1. Open the file called Epoch_Build_Config.sqf with notepad++. In each section of this document there is a section to configure each mod, it is pretty self explanitory with each section having a detailed description.
 
 
 #### Custom Loading Image
