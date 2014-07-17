@@ -50,7 +50,7 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 # Configuring Mods
 
 
-#### There are mods that still need to be configured to meet your server needs, so please read and perform all tasks below.
+#### Mods included in this project can be modified more in depth beyond the install listed below. To do that will require some user knowledge of sqf and I am not responsible for the changes made by you.
 
 
 1. If you have managed some how to not get get NotePad ++ by now, well it is time to get it.
