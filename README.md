@@ -49,10 +49,8 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 
 # Configuring Mods
 
-### There are mods that still need to be configured to meet your server needs, so please read and perform all tasks below.
 
-
-#### Welcome Script Confige
+#### There are mods that still need to be configured to meet your server needs, so please read and perform all tasks below.
 
 
 1. If you have managed some how to not get get NotePad ++ by now, well it is time to get it.
