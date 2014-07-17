@@ -37,4 +37,5 @@ Sleep 0.02;
 // Used to toggle admin scroll menu OFF
 F11_KEY = (findDisplay 46) displayAddEventHandler ["KeyDown","if ((_this select 1) == 87) then {toolsAreActive=false;};"];
 Sleep 0.02;
+// WARNING: F12 is the screen shot key for steam
 // F12_KEY = (findDisplay 46) displayAddEventHandler ["KeyDown","if ((_this select 1) == 88 then {[] execVM ""admintools\DIRECTORY_HERE\FILE_NAME_HERE.sqf"";};"];

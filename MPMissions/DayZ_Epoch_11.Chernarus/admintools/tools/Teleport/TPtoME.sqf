@@ -1,7 +1,8 @@
-//AlPMaker
 _max = 10; snext = false; plist = []; pselect5 = "";
+
 {if ((_x != player) && (getPlayerUID _x != "")) then {plist set [count plist, name _x];};} forEach entities "CAManBase";
 {if ((count crew _x) > 0) then {{if ((_x != player) && (getPlayerUID _x != "")) then {plist set [count plist, name _x];};} forEach crew _x;};} foreach (entities "LandVehicle" + entities "Air" + entities "Ship");
+
 smenu =
 {
 	_pmenu = [["",true]];
@@ -15,7 +16,7 @@ smenu =
 
 _j = 0; _max = 10; if (_max>9) then {_max = 10;};
 
-while {pselect5 == "" && commandingMenu != ""} do
+while {pselect5 == ""} do
 {
 	[_j, (_j + _max) min (count plist)] call smenu; _j = _j + _max;
 	WaitUntil {pselect5 != "" or snext};	
@@ -24,7 +25,6 @@ while {pselect5 == "" && commandingMenu != ""} do
 
 tempList = nil;
 
-if (pselect5 == "") then {pselect5 = "exit"};
 if (pselect5 != "exit") then
 {
 	_name = pselect5;
@@ -43,9 +43,7 @@ if (pselect5 != "exit") then
 			detach _x;
 			
 			_tempException = nil;
-			tempList = [
-				"_tempException"
-			];
+			tempList = [];
 		};
 	} forEach entities "CAManBase";
 };
