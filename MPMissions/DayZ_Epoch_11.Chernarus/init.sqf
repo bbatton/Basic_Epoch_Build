@@ -58,20 +58,6 @@ if (isServer) then {
 	_serverMonitor = 	[] execVM "\z\addons\dayz_code\system\server_monitor.sqf";
 	
 	[] execVM "custom\graphics.sqf";
-	[] execVM "custom\Maps\GOC_LM_wlcr.sqf";
-	[] execVM "custom\Maps\GOC_TE_bash.sqf";
-	[] execVM "custom\Maps\GOC_TE_klen.sqf";
-	[] execVM "custom\Maps\GOC_TE_neaf.sqf";
-	[] execVM "custom\Maps\GOC_TE_stary.sqf";
-	[] execVM "custom\Maps\Fuel_Station.sqf";
-	[] execVM "custom\Maps\NWA_Base.sqf";
-	[] execVM "custom\Maps\Balota.sqf";
-	[] execVM "custom\Maps\Zelena.sqf";
-	[] execVM "custom\Maps\Black_Forest_Base.sqf";
-	[] execVM "custom\Maps\Zone_Alpha.sqf";
-	[] execVM "custom\Maps\Infinicity.sqf";
-	[] execVM "custom\Maps\ZedBalota.sqf";
-	[] execVM "custom\Maps\Tikhaya_City.sqf";
 	
 };
 
@@ -96,13 +82,17 @@ if (!isDedicated) then {
 	[] execVM "custom\welcome_credits.sqf";
 	[] execVM "custom\service_point\service_point.sqf";
 	["elevator"] execVM "custom\elevator\elevator_init.sqf";
-	_nil = [] execVM "custom\JAEM\EvacChopper_init.sqf";
 	[] execVM "custom\lights\building_lights.sqf";
 	[] execVM "custom\lights\street_lights.sqf";
 	[] execVM "custom\lights\tower_lights.sqf";
 	[] execVM "custom\VehicleKeyChanger\VehicleKeyChanger_init.sqf";
 	_nil = [] execVM "custom\VASP\VASP_init.sqf";
 	
+	if (isNil 'debugMonitor') then 
+	{
+		debugMonitor = true;
+		_nill = execvm "custom\debug.sqf";
+	};
 };
 [] execVM "admintools\Activate.sqf";
 #include "\z\addons\dayz_code\system\REsec.sqf"
@@ -119,6 +109,3 @@ execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
 [] execVM "R3F_ARTY_AND_LOG\init.sqf";
 [] execVM "custom\actions\activate.sqf";
 [] execVM "RC\init.sqf";
-call compile preprocessFileLineNumbers "addons\UPSMON\scripts\Init_UPSMON.sqf";
-call compile preprocessfile "addons\SHK_pos\shk_pos_init.sqf";
-[] execVM "addons\SARGE\SAR_AI_init.sqf";
