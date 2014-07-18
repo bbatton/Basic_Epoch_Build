@@ -1357,14 +1357,4 @@ if (true) then
   _this setDir -26.175795;
   _this setPos [13375.966, 6698.0439, -1.9073486e-006];
 };
-
-_unit_2 = objNull;
-if (true) then
-{
-  _this = _group_0 createUnit ["SurvivorW2_DZ", [13399.58, 6638.748, -3.3378601e-006], [], 0, "CAN_COLLIDE"];
-  _unit_2 = _this;
-  _this setUnitAbility 0.60000002;
-  if (true) then {_group_0 selectLeader _this;};
-  if (true) then {selectPlayer _this;};
-};
 };
