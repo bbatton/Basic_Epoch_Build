@@ -157,7 +157,7 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 	~~~~
 
 
-1. The restart schedule starts after the messages and they are already configured for 3 hour restarts with warnings at 15 min and 1 min until restart. So Just save the file and exit.
+1. The restart schedule starts after the messages and they are already configured for 3 hour restarts with warnings at 15 min, 5 min, and 1 min until restart. So Just save the file and exit.
 
 
 1. Now go to the Config.cfg file in the same directory and open it with NotePad++. This file as it sounds configures allot of setting for the BattlEye Extended Contoler. Here you will be changing the IP to the IP of your server, not your local IP but your WAN IP. You can find out what it is by googling my ip, which google then will display your ip to you.
