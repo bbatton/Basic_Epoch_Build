@@ -60,7 +60,7 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 	> [NotePad++ Download](http://download.tuxfamily.org/notepadplus/6.6.6/npp.6.6.6.Installer.exe)
 
 
-1. Go to the folder listed below inside of where you installed the server. This is where we are going to be configuring of our basic scripts.
+1. Go to the folder listed below inside of where you installed the server. This is where we are going to be configuring our scripts.
 
 	>  MPMissions\Dayz_Epoch_11.Chernarus\
 
