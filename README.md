@@ -37,6 +37,10 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 #### Project is on the latest Epoch Verison 1.0.5.1
 
 
+Here is a video of me going throught the installation process
+[Unified Epoch Project - v1.1.0 "Forest" Install Tutorial](https://www.youtube.com/watch?v=D-MEQPg1-NI)
+
+
 1. Click ***[Download Zip](https://github.com/bbatton/Basic_Epoch_Build/archive/master.zip)*** on the right sidebar of this Github page.
 
 
@@ -159,6 +163,24 @@ Here is a good video tutorial by my buddy Noxsicarius on setting up a vanilla ep
 
 1. The restart schedule starts after the messages and they are already configured for 3 hour restarts with warnings at 15 min, 5 min, and 1 min until restart. So Just save the file and exit.
 
+
+1. Now to finish configuring the scheduler you need to go down to where it says this.
+
+
+	~~~~java
+	<job id='6'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>06:00:10</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		***<cmd>C:\Users\grave\Desktop\restart.bat</cmd>***
+		<cmdtype>1</cmdtype>
+	</job>
+	~~~~
+
+	
+1. Now change the file path above to the location of your restart.bat file which is located in your main dayz file that you copy and pasted the rest of the files into. To do this for the whole scheduler copy the part that says C:\Users\grave\Desktop\restart.bat and press control + F on your keyboard. The find menu you will pop up, select the tab that says replace and paste that line into find what. Then get the direct file path for your restart.bat and put it in the replace with box, then click replace all. Save your document then exit.
+	
 
 1. Now go to the Config.cfg file in the same directory and open it with NotePad++. This file as it sounds configures allot of setting for the BattlEye Extended Contoler. Here you will be changing the IP to the IP of your server, not your local IP but your WAN IP. You can find out what it is by googling my ip, which google then will display your ip to you.
 
