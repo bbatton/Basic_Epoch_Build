@@ -100,7 +100,6 @@ if (!isDedicated) then {
 	[] execVM "custom\lights\street_lights.sqf";
 	[] execVM "custom\lights\tower_lights.sqf";
 	[] execVM "custom\VehicleKeyChanger\VehicleKeyChanger_init.sqf";
-	_nil = [] execVM "custom\VASP\VASP_init.sqf";
 	
 		if (isNil 'debugMonitor') then 
 	{
