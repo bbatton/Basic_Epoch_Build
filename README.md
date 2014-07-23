@@ -1,5 +1,5 @@
-Epoch Builds
-==========
+Unified Epoch Project
+=====================
 This build is made to allow for new hosters to have a build of dayz epoch that already has most features players look for configured and working from the start. As time goes on each release version will have more and more features allowing for hosters to take different flavors of epoch builds with different server loads based on the amount of content in each build.
 
 # Table of Contents:
