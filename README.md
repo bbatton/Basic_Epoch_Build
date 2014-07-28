@@ -84,35 +84,6 @@ Here is a video of me going throught the installation process
 # Installing BEC Rcon
 
 
-1. This part is where we set up the auto restart and ingame battleye messaging system. So now go back to the server root directory which is the install folder. Find the file called BEC control Epoch and open it with Notepad++.
-
-1. Inside this .bat file we are going to be changing the file path so it reads into the correct directory in which your BEC files are located. So go ahead and find the full file path from your drive to the file located in the server files instance_11_Chernarus\BattlEye\Bec and paste it over the file path shown below inside the quotation marks.
-
-
-	~~~~java
-	cd "C:\Users\grave\Desktop\Dayz Server\instance_11_Chernarus\BattlEye\Bec"  
-	~~~~
-
-
-1. Now save the file and exit.
-
-
-1. Find the .bat file called restart.bat in the same directory that the BEC control Epoch.bat file was in. Find the following two lines
-
-
-	~~~~java
-	set dayzpath="C:\Users\grave\Desktop\Dayz Server"
-	~~~~
-
-
-	~~~~java
-	set becpath="C:\Users\grave\Desktop"
-	~~~~
-
-
-1. Replace both the file paths inside the quotation marks with the file path that you installed the dayz server to. After that save the file and exit.
-
-
 1. Now go to the folder MPMissions\instance_11_Chernarus\BattlEye\Bec\Config and open Scheduler.xml with Notepad++. This file is where you schedule all your server restarts and schedule to have messages auto broadcast over global chat ingame. The section below is where your global messages are broadcast, currently it will broadcast these two messages every 10 min.
 
 
