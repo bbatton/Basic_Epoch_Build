@@ -87,7 +87,7 @@ Here is a video of me going throught the installation process
 1. Go to the main directory for your server and simply double click UEP BEC Installer. Then follow the GUI menu instructions.
 
 
-1. First start up xamp and turn on the apache server and mySQL server. Now to start your server launch the DayZ_Epoch_instance_11_Chernarus.bat file and then the BEC control Epoch.bat file. Your server should now be running and BEC will restart the server at 3am 6am 9am 12pm 3pm 6pm 9pm 12am.
+1. First start up xamp and turn on the apache server and mySQL server. Now to start your server just double click the start.bat file. Your server should now be running and BEC will restart the server at 3am 6am 9am 12pm 3pm 6pm 9pm 12am.
 
 
 #### CONGRATS EPOCH BUILD v1.1 "Forest" INSTALL IS NOW COMPLETE!!!
