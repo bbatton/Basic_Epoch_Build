@@ -1,21 +1,19 @@
-timeout 10
+@ echo off
+pushd %~dp0
+set Server_Location=%CD%
+cd /d %CD%
 
+timeout 7
 taskkill /f /im bec.exe
-
-timeout 5
- 
-:: start the server..
-set dayzpath="C:\Users\grave\Desktop\Dayz Server"
-cd /d %dayzpath%
-start /b "Dayz Epoch Server" "DayZ_Epoch_instance_11_Chernarus.bat"
- 
 timeout 15
-:: start bec
-set becpath="C:\Users\grave\Desktop"
-cd /d %becpath%
-start  "BattlEye Extended Control" "BEC control Epoch.bat"
 
+
+:: start the server..
+start /b "Dayz Epoch Server" /min "DayZ_Epoch_instance_11_Chernarus.bat"
+timeout 15
+
+:: start bec
+start  "BattlEye Extended Control" /min "BEC.bat"
 taskkill /f /im cmd.exe
- 
 cls
 @exit
