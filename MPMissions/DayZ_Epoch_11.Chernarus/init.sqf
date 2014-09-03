@@ -86,7 +86,7 @@ if (!isDedicated) then {
 	_playerMonitor = 	[] execVM "\z\addons\dayz_code\system\player_monitor.sqf";	
 	
 	//Anti-Hack with admin tool exception
-	[] execVM "Epoch_Build_Config.sqf";
+	[] execVM "UEP_Config.sqf";
 	[] execVM "admintools\AdminList.sqf";
 	if ( !((getPlayerUID player) in AdminList) && !((getPlayerUID player) in ModList) && !((getPlayerUID player) in tempList)) then 
 	{
