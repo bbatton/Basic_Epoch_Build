@@ -15,6 +15,6 @@
 <t size='1.1' shadow='1'align='left' color='#FFFFFF'>%7</t><br/>
 <t size='.7' shadow='1'align='left' color='#FFFFFF'></t><br/>
 <t size='1.1' shadow='1'align='left' color='#FFFFFF'>%8</t><br/>
-",EBC_Rule_1,EBC_Rule_2,EBC_Rule_3,EBC_Rule_4,EBC_Rule_5,EBC_Rule_6,EBC_Rule_7,EBC_Rule_8 ];
+",UEP_Rule_1,UEP_Rule_2,UEP_Rule_3,UEP_Rule_4,UEP_Rule_5,UEP_Rule_6,UEP_Rule_7,UEP_Rule_8 ];
 
 sleep 10;

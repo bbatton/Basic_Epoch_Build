@@ -40,16 +40,19 @@ _onScreenTime = 6; 		//how long one role should stay on screen. Use value from 0
 waitUntil {!isNil "dayz_animalCheck"};
 sleep 10; //Wait in seconds before the credits start after player IS ingame
  
-_role1 = EBC_Welcome_Title_1;
-_role1names = [EBC_Welcome_Message_1];
-_role2 = EBC_Welcome_Title_2;
-_role2names = [EBC_Welcome_Message_2];
-_role4 = EBC_Welcome_Title_3;				//The "by" in this row will be shown one row below "Server antihack". Can be applied to any role
-_role4names = [EBC_Welcome_Message_3];
-_role5 = EBC_Welcome_Title_4;
-_role5names = [EBC_Welcome_Message_4];
-_role6 = EBC_Welcome_Title_5;
-_role6names = [EBC_Welcome_Message_5];
+_role1 = UEP_Welcome_Title_1;
+_role1names = [UEP_Welcome_Message_1];
+_role2 = UEP_Welcome_Title_2;
+_role2names = [UEP_Welcome_Message_2];
+_role3 = UEP_Welcome_Title_3;				//The "by" in this row will be shown one row below "Server antihack". Can be applied to any role
+_role3names = [UEP_Welcome_Message_3];
+_role4 = UEP_Welcome_Title_4;
+_role4names = [UEP_Welcome_Message_4];
+_role5 = UEP_Welcome_Title_5;
+_role5names = [UEP_Welcome_Message_5];
+_role6 = UEP_Welcome_Title_6;
+_role6names = [UEP_Welcome_Message_6];
+
  
 {
 	sleep 2;
@@ -72,6 +75,7 @@ _role6names = [EBC_Welcome_Message_5];
 	//The list below should have exactly the same amount of roles as the list above
 	[_role1, _role1names],
 	[_role2, _role2names],
+	[_role3, _role3names],
 	[_role4, _role4names],
 	[_role5, _role5names],
 	[_role6, _role6names]//make SURE the last one here does NOT have a , at the end

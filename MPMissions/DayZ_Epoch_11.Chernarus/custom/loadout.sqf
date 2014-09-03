@@ -1,7 +1,7 @@
-_Admin = [EBC_Admin_1,EBC_Admin_2,EBC_Admin_3,EBC_Admin_4,EBC_Admin_5]; // Admins: Nox, Grave, Lupin
-_Moderator = [EBC_Mod_1,EBC_Mod_2,EBC_Mod_3,EBC_Mod_4,EBC_Mod_5]; // Mods: 
-_Donator = [EBC_Donator_1,EBC_Donator_2,EBC_Donator_3,EBC_Donator_4,EBC_Donator_5]; // Donator
-_ProDonor = [EBC_ProDonator_1,EBC_ProDonator_2,EBC_ProDonator_3,EBC_ProDonator_4,EBC_ProDonator_5]; // ProDonors
+_Admin = [UEP_Admin_1,UEP_Admin_2,UEP_Admin_3,UEP_Admin_4,UEP_Admin_5]; // Admins
+_Moderator = [UEP_Mod_1,UEP_Mod_2,UEP_Mod_3,UEP_Mod_4,UEP_Mod_5]; // Mods
+_Donator = [UEP_Donator_1,UEP_Donator_2,UEP_Donator_3,UEP_Donator_4,UEP_Donator_5]; // Donator
+_ProDonor = [UEP_ProDonator_1,UEP_ProDonator_2,UEP_ProDonator_3,UEP_ProDonator_4,UEP_ProDonator_5]; // ProDonors
 
 //Admin Loadout
 if ((getPlayerUID player) in _Admin) then {
@@ -32,8 +32,8 @@ if ((getPlayerUID player) in _Admin) then {
 				DefaultBackpackWeapon = "";
 			}else{
 				//Default Loadout
-				DefaultMagazines = ["ItemBandage","ItemBandage","ItemPainkiller","ItemWaterbottleBoiled"];
-				DefaultWeapons = ["ItemHatchet_DZE"];
+				DefaultMagazines = ["ItemBandage","ItemBandage","17Rnd_9x19_glock17","17Rnd_9x19_glock17","ItemMorphine","ItemPainkiller"];
+				DefaultWeapons = ["glock17_EP1","ItemFlashlight","ItemHatchet"];
 				DefaultBackpack = "DZ_Patrol_Pack_EP1";
 				DefaultBackpackWeapon = "";
 			};

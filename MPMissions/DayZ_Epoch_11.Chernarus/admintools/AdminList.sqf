@@ -1,18 +1,24 @@
 // Epoch Admin Tools
-//Replace 111111111 with your ID. 
+
+//Checks to make sure UEP configs are loaded
+UEP_Config = false;
+execVM "UEP_Config.sqf";
+waitUntil {UEP_Config};
+diag_log "UEP: Configs Loaded";
+
 AdminList = [
-EBC_Admin_Tool_1, // <Your In-Game Name here>
-EBC_Admin_Tool_2, // <Admin In-Game Name>
-EBC_Admin_Tool_3,
-EBC_Admin_Tool_4,
-EBC_Admin_Tool_5
+UEP_Admin_Tool_1, // <Your In-Game Name here>
+UEP_Admin_Tool_2, // <Admin In-Game Name>
+UEP_Admin_Tool_3,
+UEP_Admin_Tool_4,
+UEP_Admin_Tool_5
 ];
 ModList = [
-EBC_Mod_Tool_1, // <Moderator In-Game Name>
-EBC_Mod_Tool_2, // <Moderator In-Game Name>
-EBC_Mod_Tool_3,
-EBC_Mod_Tool_4,
-EBC_Mod_Tool_5
+UEP_Mod_Tool_1, // <Moderator In-Game Name>
+UEP_Mod_Tool_2, // <Moderator In-Game Name>
+UEP_Mod_Tool_3,
+UEP_Mod_Tool_4,
+UEP_Mod_Tool_5
 ];
 
 
