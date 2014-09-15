@@ -1,5 +1,3 @@
-waitUntil {UEP_Config};
-
 while {debugMonitor} do
 {
 	_time = (round(180-(serverTime)/60));

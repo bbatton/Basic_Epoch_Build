@@ -51,6 +51,11 @@ This section is to activate the admin tools for your admins you want to have acc
 tool set. This section is different than the loadout admin confige for casses where you don't
 want admins or mods to have a specialized loadout on respawn.
 */
+UEP_SAdmin_Tool_1 = "1111111";
+UEP_SAdmin_Tool_2 = "1111111";
+UEP_SAdmin_Tool_3 = "1111111";
+UEP_SAdmin_Tool_4 = "1111111";
+UEP_SAdmin_Tool_5 = "1111111";
 
 UEP_Admin_Tool_1 = "1111111";
 UEP_Admin_Tool_2 = "1111111";
@@ -82,9 +87,10 @@ This section is where you change what appears on the debugger, which is the bloc
 appears on the top right of your screen when you are playing.
 */
 
-UEP_Bugger_1 = ;
-UEP_Bugger_2 = ;
-UEP_Bugger_3 = ;
+UEP_Bugger_1 = "Server Name";
+UEP_Bugger_2 = "TS IP";
+UEP_Bugger_3 = "Something Else";
 
 //Do not edit below this point
 UEP_Config = true;
+diag_log("UEP: Settings Loaded");

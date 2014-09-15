@@ -75,6 +75,8 @@ if (isServer) then {
 	
 };
 
+[] execVM "admintools\Activate.sqf";
+
 if (!isDedicated) then {
 	//Conduct map operations
 	0 fadeSound 0;
@@ -88,15 +90,17 @@ if (!isDedicated) then {
 	//Anti-Hack with admin tool exception
 	[] execVM "UEP_Config.sqf";
 	[] execVM "admintools\AdminList.sqf";
+	
+	waitUntil{!isNil "adminListLoaded" && !isNil "UEP_Config"};
 	if ( !((getPlayerUID player) in AdminList) && !((getPlayerUID player) in ModList) && !((getPlayerUID player) in tempList)) then 
 	{
-		[] execVM "\z\addons\dayz_code\system\antihack.sqf";
+	 [] execVM "\z\addons\dayz_code\system\antihack.sqf"; // Epoch Antihack
 	};
 	//Custom Scripts and Plugins
 	[] execVM "custom\welcome_credits.sqf";
 	[] execVM "custom\service_point\service_point.sqf";
 	["elevator"] execVM "custom\elevator\elevator_init.sqf";
-	_nil = [] execVM "custom\JAEM\EvacChopper_init.sqf";
+	//_nil = [] execVM "custom\JAEM\EvacChopper_init.sqf";
 	[] execVM "custom\lights\building_lights.sqf";
 	[] execVM "custom\lights\street_lights.sqf";
 	[] execVM "custom\lights\tower_lights.sqf";

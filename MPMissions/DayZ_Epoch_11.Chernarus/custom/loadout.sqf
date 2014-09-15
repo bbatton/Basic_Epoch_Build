@@ -1,3 +1,5 @@
+private["_Admin", "_Moderator", "_Donator", "_ProDonor"];
+
 _Admin = [UEP_Admin_1,UEP_Admin_2,UEP_Admin_3,UEP_Admin_4,UEP_Admin_5]; // Admins
 _Moderator = [UEP_Mod_1,UEP_Mod_2,UEP_Mod_3,UEP_Mod_4,UEP_Mod_5]; // Mods
 _Donator = [UEP_Donator_1,UEP_Donator_2,UEP_Donator_3,UEP_Donator_4,UEP_Donator_5]; // Donator
