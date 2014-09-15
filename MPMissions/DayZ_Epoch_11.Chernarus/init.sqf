@@ -119,6 +119,3 @@ execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
 [] execVM "R3F_ARTY_AND_LOG\init.sqf";
 [] execVM "custom\actions\activate.sqf";
 [] execVM "RC\init.sqf";
-call compile preprocessFileLineNumbers "addons\UPSMON\scripts\Init_UPSMON.sqf";
-call compile preprocessfile "addons\SHK_pos\shk_pos_init.sqf";
-[] execVM "addons\SARGE\SAR_AI_init.sqf";

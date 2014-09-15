@@ -155,4 +155,3 @@ class DayZ_loadingScreen
 };
 #include "admintools\dialog.hpp"
 #include "custom\snap_build\points.hpp"
-#include "addons\SARGE\SAR_define.hpp"
