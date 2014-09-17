@@ -21,8 +21,54 @@ This build is made to allow for new hosters to have a build of dayz epoch that a
 * Noxsicarius Admin tool set
 * Fully stable and tested Epoch server build
 * Mods incorporated have been pre-balanced and configured
-* Full BEC/Rcon messaging and auto restart scheduler
+* Bundled UEP BEC Installer
 * Exe Auto package installer (coming soon)
+
+# Pre-Installed Mods
+
+
+1. Elevators
+1. Tow/Lift
+1. No Tow/Lift For Locked Cars
+1. BTC Logistics for loading small vehicles
+1. Cars are invincible while car owner is in trader
+1. Ghosts of Chernarus Map addons
+1. Vehicle Key changer & vehicle claim
+1. BEC plus restart scheduler
+1. Evac choppers (currently disabled for testing)
+1. Trader Item preview (currently disabled for testing)
+1. Bandit challenge city with static reward (currently disabled re-implementing with WAI)
+1. Zombie free bases (currently under testing)
+1. Disabled ambient music
+1. AGN Safezones
+1. Custom Spawn Loadout
+1. Nox Admin Tools
+1. Global Messages
+1. Cessena's Spawn With M240's Mounted
+1. Build Snapping Extented
+1. Teammate Radio Communication
+1. Self Bloodbag
+1. Custom Actions Menu
+1. Dancing 
+1. Buildable Vehicles
+1. Flip Vehicle
+1. Server Rules Menu
+1. Suicide
+1. Street Lights
+1. Building Lights
+1. Tower Lights
+1. Custom Debug Monitor
+1. Drink Water From Any Source
+1. Ignite Tents
+1. Custom Welcome Credits
+1. Take Clothes
+1. Auto Refuel
+1. Repair & Rearm Stations
+1. No Weight
+1. Build-able Elevators
+1. Graphics Color Correction
+1. Destructible Bases
+and Many More...
 
 # Installing Vanilla Epoch
 In order to be able to host a dayz epoch server you must first own ARMA 2 and ARMA 2 Operation ArrowHead. Each release requires you to first have a vanilla dayz epoch server setup and ready to go.
@@ -145,8 +191,7 @@ Here is a video of me going throught the installation process
   * Build Snap Extended		by OtterNas3
   * =BTC=_Logistic			by Torndeco
   * R3F Tow/Lift			by ArmaHolics
-  * Zombie Free Bases		by MadMartyr
-  * DZAI Mission System		by Torndeco
+  * WAI						by F3cuk
   * Welcome Messages 		by ZedBuster
   * Self Bloodbag			by Krixes
   * Vehicle Service Point	by Axe Cop
@@ -159,6 +204,7 @@ Here is a video of me going throught the installation process
   * Master Key				by OtterNas3
   * Vehicle GodMode Trader  by LunchboxCharlie
   * Debug Menu				by NoxSicarius
+  * Zombie Free Bases		by MadMartyr
 
 #### Disclaimer
 
