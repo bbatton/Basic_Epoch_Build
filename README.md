@@ -31,7 +31,7 @@ This build is made to allow for new hosters to have a build of dayz epoch that a
 1. Tow/Lift
 1. No Tow/Lift For Locked Cars
 1. BTC Logistics for loading small vehicles
-1. Cars are invincible while car owner is in trader
+1. Cars in trader are invincible while car owner is in trader
 1. Ghosts of Chernarus Map addons
 1. Vehicle Key changer & vehicle claim
 1. BEC plus restart scheduler
