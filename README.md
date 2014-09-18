@@ -157,14 +157,14 @@ Here is a video of me going throught the installation process
   * You have to start BEC/Rcon by launching the BEC control Epoch file after that it is good forever or until you manually exit it
   * You probably didn't put the right file path, re-read the install and go throught the steps again
 * My server FPS keeps getting lower with every release
-  * Each release has more in it than the last so if performance gets to high revert to a lower level release or upgrade your server hardware
+  * Each release has more in it than the last so if server performance gets concerning revert to a lower level release or upgrade your server hardware
   * You may want to clear unused vehicles and bases from your database as this could be a cause
 * I want the Map addons to be on my server so the client doesn't have to download them
   * That is something you can do yourself. I put it client side to reduce server load and overall network traffic for all
 * The AI for mission is to hard how can I change this?
-  * Un-PBO your Epoch Server file got to the DZAI file and change the confige values for detection range and things like that
+  * Un-PBO your Epoch Server file got to the WAI file and change the confige values for detection range and things like that
 * My admin tools aren't working
-  * Make sure you followed my install intructions and put your admin UID in the right place
+  * Make sure you followed my install intructions and put your admin UID in the right place of the UEP_Config.sqf
 * I found a bug in my admin tools or I have a tool suggestion
   * All bugs report and tool suggestions should go to Noxsicarius in his admin tools dayz epoch forum topic under modders corner
 * There are features I want in the next release
