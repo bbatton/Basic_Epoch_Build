@@ -1,3 +1,6 @@
+waitUntil{!isNil "UEP_Config"};
+diag_log("UEP: Settings Loaded for Debugger");
+
 while {debugMonitor} do
 {
 	_time = (round(180-(serverTime)/60));

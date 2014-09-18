@@ -105,6 +105,12 @@ if (!isDedicated) then {
 	[] execVM "custom\VehicleKeyChanger\VehicleKeyChanger_init.sqf";
 	_nil = [] execVM "custom\VASP\VASP_init.sqf";
 	
+	if (isNil 'debugMonitor') then 
+	{
+		debugMonitor = true;
+		_nill = execvm "custom\debug_monitor.sqf";
+	};
+	
 };
 [] execVM "admintools\Activate.sqf";
 #include "\z\addons\dayz_code\system\REsec.sqf"
