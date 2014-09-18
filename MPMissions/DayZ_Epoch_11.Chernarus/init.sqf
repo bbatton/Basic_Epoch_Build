@@ -75,8 +75,6 @@ if (isServer) then {
 	
 };
 
-[] execVM "admintools\Activate.sqf";
-
 if (!isDedicated) then {
 	//Conduct map operations
 	0 fadeSound 0;
