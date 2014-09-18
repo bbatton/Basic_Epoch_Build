@@ -6,6 +6,7 @@ This build is made to allow for new hosters to have a build of dayz epoch that a
 
 # Table of Contents:
 * [Features](https://github.com/bbatton/Basic_Epoch_Build#features)
+* [Pre-Installed Mods](https://github.com/bbatton/Unified-Epoch-Project#pre-installed-mods)
 * [Installing Vanilla Epoch](https://github.com/bbatton/Basic_Epoch_Build#installing-vanilla-epoch)
 * [Installing Release Builds](https://github.com/bbatton/Basic_Epoch_Build#installing-release-builds)
 * [Configuring Mods](https://github.com/bbatton/Basic_Epoch_Build#configuring-mods)
