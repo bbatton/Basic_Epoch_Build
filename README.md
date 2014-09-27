@@ -118,7 +118,7 @@ Here is a video of me going throught the installation process
 	>  MPMissions\Dayz_Epoch_11.Chernarus\
 
 
-1. Open the file called Epoch_Build_Config.sqf with notepad++. In each section of this document there is a section to configure each mod, it is pretty self explanitory.
+1. Open the file called UEP_Config.sqf with notepad++. In each section of this document there is a section to configure each mod, it is pretty self explanitory.
 
 
 #### Custom Loading Image
