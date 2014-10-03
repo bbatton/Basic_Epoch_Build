@@ -145,10 +145,10 @@ Here is a video of me going throught the installation process
 # Updating To New Release
 
 
-1. Updating to new version of the UEP project are pretty simple, you simply delete your old build file except for the UEP_Config.sqf. Then copy the build into your pre-existing vanilla server folder and paste your old UEP_config.sqf over the new template one. 
+1. Updating to new version of the UEP project is pretty simple, you simply delete your old build file except for the UEP_Config.sqf. Then copy the new build into your pre-existing vanilla server folder and paste your old UEP_config.sqf over the new template one. 
 
 
-1. If you have further customized your builds, then I suggest looking through the commits for what has changed and carefully start migrating the builds together. Change logs are not something I tend to do yet, but will try to incorporate in the future.
+1. If you have further customized your builds on top of the UEP then I suggest looking through the commits for what has changed and carefully start migrating the builds together. Change logs are not something I tend to do yet, but will try to incorporate in the future.
 
 
 #FAQ
@@ -169,7 +169,7 @@ Here is a video of me going throught the installation process
 * I found a bug in my admin tools or I have a tool suggestion
   * All bugs report and tool suggestions should go to Noxsicarius in his admin tools dayz epoch forum topic under modders corner
 * There are features I want in the next release
-  * Go to my topic in the dayz epoch forum or post it as an issue.
+  * Go to my topic in the dayz epoch forum under off topic or post it as an issue.
 * I want to help make the UEP better
   * Copy my repo and make a pull request when you have completed a feature
 
