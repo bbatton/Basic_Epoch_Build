@@ -139,37 +139,39 @@ Here is a video of me going throught the installation process
 1. First start up xamp and turn on the apache server and mySQL server. Now to start your server just double click the start.bat file. Your server should now be running and BEC will restart the server at 3am 6am 9am 12pm 3pm 6pm 9pm 12am.
 
 
-#### CONGRATS EPOCH BUILD v1.1 "Forest" INSTALL IS NOW COMPLETE!!!
+#### CONGRATS EPOCH BUILD v1.2.4 "Forest" INSTALL IS NOW COMPLETE!!!
 
 
 # Updating To New Release
 
 
-1. Updating is made pretty easy with these builds all you have to do is read the change log for each release so see what has been updated and then drag and drop those new files or folders into your install after deleted the old ones that have been changed.
+1. Updating to new version of the UEP project are pretty simple, you simply delete your old build file except for the UEP_Config.sqf. Then copy the build into your pre-existing vanilla server folder and paste your old UEP_config.sqf over the new template one. 
 
 
-1. It is not suggested that you just copy over the entire new release and let it overwrite your old release files as that will make you have to go through this read me all over again configuring all the addons. So it is best to only overwrite what has changed for the newer releases.
+1. If you have further customized your builds, then I suggest looking through the commits for what has changed and carefully start migrating the builds together. Change logs are not something I tend to do yet, but will try to incorporate in the future.
 
 
 #FAQ
 
 
 * My server isn't auto Restarting and my messages don't show either
-  * You have to start BEC/Rcon by launching the BEC control Epoch file after that it is good forever or until you manually exit it
-  * You probably didn't put the right file path, re-read the install and go throught the steps again
+  * Go back through the UEP BEC installer and make sure you put in all the correct information. If you are not sure there is a youtube video going through the steps.
 * My server FPS keeps getting lower with every release
-  * Each release has more in it than the last so if server performance gets concerning revert to a lower level release or upgrade your server hardware
-  * You may want to clear unused vehicles and bases from your database as this could be a cause
+  * Each release has more in it than the last so if server performance gets concerning revert to the basic versions or upgrade your server hardware
+  * You may want to clear unused vehicles and bases from your database as this could be also cause this problem
+  * Lower you player base building limit as well as the step above
 * I want the Map addons to be on my server so the client doesn't have to download them
-  * That is something you can do yourself. I put it client side to reduce server load and overall network traffic for all
+  * That is something you can do yourself. I put it client side to reduce server load and overall network traffic for all, which increases FPS
 * The AI for mission is to hard how can I change this?
-  * Un-PBO your Epoch Server file got to the WAI file and change the confige values for detection range and things like that
+  * Un-PBO your Epoch Server file got to the WAI file and change the confige values for detection range, com range, AI difficulty, etc
 * My admin tools aren't working
-  * Make sure you followed my install intructions and put your admin UID in the right place of the UEP_Config.sqf
+  * Make sure to fill out the admin tool section of the UEP_Config.sqf file
 * I found a bug in my admin tools or I have a tool suggestion
   * All bugs report and tool suggestions should go to Noxsicarius in his admin tools dayz epoch forum topic under modders corner
 * There are features I want in the next release
-  * Go to my topic in the dayz epoch forum and post it there, if it is a good suggestion I put it in my development road map 
+  * Go to my topic in the dayz epoch forum or post it as an issue.
+* I want to help make the UEP better
+  * Copy my repo and make a pull request when you have completed a feature
 
 
 # Error Reporting
@@ -186,6 +188,7 @@ Here is a video of me going throught the installation process
 
 * I believe in giving credit where credit is due so thank you creators of the Epoch Mod
 * Thanks to all the modders who's work I have included into my releases
+  * UEP BEC Installer       by bbatton
   * Epoch Admin Tools		by NoxSicarius
   * JAEM-Evac Chopper		by OtterNas3
   * Radio Communication		by ilikepizza
