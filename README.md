@@ -1,7 +1,7 @@
 Unified Epoch Project
 =====================
 #Help Wanted:
-In order to keep the UEP current with the community I am asking fellow members of the dayz community to help keep this pack up to date. I personally don't have much time to work on this project but want the project to keep evloving to reach it's goal of ultimate being the true Unified Epoch experience for modders, players, and hosters. If you wish to contribute to this pack please do so by cloning my repo and submitting pull requests.
+In order to keep the UEP current with the community I am asking fellow members of the dayz community to help keep this pack up to date. I personally don't have much time to work on this project but want the project to keep evloving to reach it's goal of ultimately being the true Unified Epoch experience for modders, players, and hosters. If you wish to contribute to this pack please do so by cloning my repo and submitting pull requests.
 
 This build is made to allow for new hosters to have a build of dayz epoch that already has most features players look for configured and working from the start. As time goes on each release version will have more and more features allowing for hosters to take different flavors of epoch builds with different server loads based on the amount of content in each build.
 
